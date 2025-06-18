@@ -910,7 +910,7 @@ body {
 }
 
 .hero__container {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-16);
   align-items: center;
