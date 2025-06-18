@@ -904,19 +904,23 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  position: fixed;
+  position: variable;
   background: var(--gradient-dark);
   overflow: hidden;
 }
 
-.hero__container {
-  display: flex;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-16);
-  align-items: center;
-  padding: var(--space-20) 0;
+@media (max-width: 900px) {
+  .hero__container {
+    flex-direction: column;
+    gap: var(--space-12); /* Reduza o gap para mobile */
+    padding: var(--space-10) 0;
+    align-items: stretch;
+  }
+  .hero__content, .hero__visual {
+    width: 100%;
+    max-width: 100%;
+  }
 }
-
 .hero__title {
   font-size: var(--font-size-5xl);
   font-weight: 700;
