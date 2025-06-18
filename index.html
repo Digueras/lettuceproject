@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettuce Capital - Gerenciamento de Risco para Day Traders</title>
+    <meta name="description" content="Gerencie seu risco de forma automática. Calcule DARF, dedo duro, porcentagem da mesa e muito mais com a plataforma da Lettuce Capital.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <span class="logo">Lettuce Capital</span>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Início</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#features" class="nav__link">Funcionalidades</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__actions">
+                <a href="#contact" class="btn btn--primary">Começar Agora</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="hero__text-animated">Você lucra.</span>
+                    <span class="hero__text-animated">Nós fazemos as contas.</span>
+                </h1>
+                <p class="hero__description">
+                    Gerencie seu risco de forma automática com a plataforma da Lettuce Capital. 
+                    Calcule DARF, dedo duro, porcentagem da mesa e muito mais.
+                </p>
+                <div class="hero__actions">
+                    <a href="#contact" class="btn btn--primary btn--lg">Experimente Grátis</a>
+                    <a href="#features" class="btn btn--outline btn--lg">Conheça Melhor</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="dashboard-preview">
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <span class="card-title">DARF Hoje</span>
+                            <span class="card-status status--success">Calculado</span>
+                        </div>
+                        <div class="card-value">R$ 2.847,32</div>
+                        <div class="card-chart"></div>
+                    </div>
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <span class="card-title">Repasse Mesa</span>
+                            <span class="card-status status--warning">Pendente</span>
+                        </div>
+                        <div class="card-value">78.5%</div>
+                        <div class="card-progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__particles" id="particles"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about__container container">
+            <div class="section-header">
+                <h2 class="section-title">Quem Somos</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about__content">
+                <p class="about__text">
+                    Somos traders e desenvolvedores que entendem a dor de quem precisa operar com agilidade e, 
+                    ao mesmo tempo, controlar impostos, repasses e riscos. A Lettuce Capital nasceu para automatizar 
+                    essa parte do processo e permitir que você foque no que realmente importa: <strong>operar bem</strong>.
+                </p>
+                <div class="about__stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="99.9">0</div>
+                        <div class="stat-suffix">%</div>
+                        <div class="stat-label">Precisão nos Cálculos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="1000">0</div>
+                        <div class="stat-suffix">+</div>
+                        <div class="stat-label">Traders Ativos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-suffix">/7</div>
+                        <div class="stat-label">Suporte Disponível</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features__container container">
+            <div class="section-header">
+                <h2 class="section-title">O que a ferramenta faz?</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="features__grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">DARF Automático</h3>
+                    <p class="feature-description">
+                        Calculamos automaticamente o imposto devido com base nas suas operações do dia.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">💼</div>
+                    <h3 class="feature-title">Repasses da Mesa</h3>
+                    <p class="feature-description">
+                        Apuração automática da porcentagem da mesa proprietária, já descontando o que for necessário.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">Dedo Duro e Outras Taxas</h3>
+                    <p class="feature-description">
+                        Sem surpresas no fim do mês. Nós contabilizamos todas as taxas obrigatórias.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials__container container">
+            <div class="section-header">
+                <h2 class="section-title">O que nossos traders dizem</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="testimonials__grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Lettuce Capital transformou minha rotina. Agora posso focar nas operações 
+                            sem me preocupar com a parte burocrática."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4 class="author-name">Carlos Silva</h4>
+                            <span class="author-role">Day Trader</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "A automação dos repasses me poupou horas de trabalho manual todo mês. Recomendo demais!"
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4 class="author-name">Ana Santos</h4>
+                            <span class="author-role">Trader Mesa Proprietária</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta__container container">
+            <div class="cta__content">
+                <h2 class="cta__title">Pronto para automatizar seus cálculos?</h2>
+                <p class="cta__description">
+                    Comece agora e foque no que realmente importa: suas operações.
+                </p>
+            </div>
+            <div class="cta__form">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="phone" placeholder="Seu telefone" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="experience" required>
+                                <option value="">Nível de experiência</option>
+                                <option value="iniciante">Iniciante</option>
+                                <option value="intermediario">Intermediário</option>
+                                <option value="avancado">Avançado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width btn--lg">
+                        <span class="btn-text">Começar Gratuitamente</span>
+                        <div class="btn-loader"></div>
+                    </button>
+                    <p class="form-note">
+                        Teste grátis por 14 dias. Sem compromisso.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <span class="logo">Lettuce Capital</span>
+                    <p class="footer__description">
+                        Automatizando cálculos para traders focarem no que importa.
+                    </p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__section">
+                        <h4 class="footer__title">Produto</h4>
+                        <ul class="footer__list">
+                            <li><a href="#features" class="footer__link">Funcionalidades</a></li>
+                            <li><a href="#" class="footer__link">Preços</a></li>
+                            <li><a href="#" class="footer__link">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section">
+                        <h4 class="footer__title">Suporte</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Documentação</a></li>
+                            <li><a href="#" class="footer__link">Contato</a></li>
+                            <li><a href="#" class="footer__link">Status</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section">
+                        <h4 class="footer__title">Legal</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Privacidade</a></li>
+                            <li><a href="#" class="footer__link">Termos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2025 Lettuce Capital. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
